@@ -80,10 +80,10 @@ export default function Page() {
           <PricingCardThree
             title="Choose Your Plan"
             description="Flexible pricing options tailored to meet your needs."
-            plans={[
-              { id: "1", price: "$19/mo", name: "Starter", features: ["Basic Support", "100 GB Storage"] },
-              { id: "2", badge: "Popular", price: "$49/mo", name: "Pro", features: ["Priority Support", "500 GB Storage"] },
-              { id: "3", price: "$99/mo", name: "Enterprise", features: ["Dedicated Assistance", "Unlimited Storage"] }
+            plans={[              
+              { id: "1", price: "$19/mo", name: "Starter", buttons: [], features: ["Basic Support", "100 GB Storage"] },
+              { id: "2", badge: "Popular", price: "$49/mo", name: "Pro", buttons: [], features: ["Priority Support", "500 GB Storage"] },
+              { id: "3", price: "$99/mo", name: "Enterprise", buttons: [], features: ["Dedicated Assistance", "Unlimited Storage"] }
             ]}
           />
         </div>
@@ -108,7 +108,7 @@ export default function Page() {
             tag="Stay Connected"
             title="Get in Touch"
             description="Join our newsletter for updates on our services and products."
-            onSubmit={(email) => console.log(email)}
+            onSubmit={(email) => console.log(email)}            
           />
         </div>
       </div>
