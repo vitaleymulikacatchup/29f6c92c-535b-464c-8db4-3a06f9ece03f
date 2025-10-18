@@ -11,11 +11,6 @@ import ContactCenter from '@/components/sections/contact/ContactCenter';
 import FooterBase from '@/components/sections/footer/FooterBase';
 import { Zap, ShieldCheck, Quote } from "lucide-react";
 
-const assetMap = [
-  {"id":"hero-bg","url":"https://images.pexels.com/photos/11167645/pexels-photo-11167645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","alt":"Dynamic portrait with swirling neon lights creating an ethereal and futuristic vibe."},
-  {"id":"about-bg","url":"https://images.pexels.com/photos/6204266/pexels-photo-6204266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940","alt":"Hands poised for creativity on an empty notepad, ready to jot down ideas in a serene workspace."}
-];
-
 export default function Page() {
   return (
     <ThemeProvider
@@ -40,7 +35,7 @@ export default function Page() {
           <HeroSplit
             title="Innovate Your Workflow"
             description="Cutting-edge solutions for modern businesses."
-            imageSrc={(() => {const _a = assetMap.find(a => a.id === "hero-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()}
+            imageSrc="https://images.pexels.com/photos/11167645/pexels-photo-11167645.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
             imagePosition="right"
             buttons={[
               { text: "Get Started", href: "features" },
@@ -58,7 +53,7 @@ export default function Page() {
               { title: "Efficiency", description: "Streamline processes like never before.", icon: Zap },
               { title: "Reliability", description: "Trusted by thousands globally.", icon: ShieldCheck }
             ]}
-            imageSrc={(() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()}
+            imageSrc="https://images.pexels.com/photos/6204266/pexels-photo-6204266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940"
             imagePosition="left"
           />
         </div>
@@ -69,8 +64,8 @@ export default function Page() {
             title="Our Features"
             description="Explore the powerful tools and options available."
             features={[
-              { title: "Advanced Security", description: "State-of-the-art protection for your data.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})() },
-              { title: "Seamless Integration", description: "Connect with your favorite tools effortlessly.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})() }
+              { title: "Advanced Security", description: "State-of-the-art protection for your data.", imageSrc: "https://images.pexels.com/photos/6204266/pexels-photo-6204266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" },
+              { title: "Seamless Integration", description: "Connect with your favorite tools effortlessly.", imageSrc: "https://images.pexels.com/photos/6204266/pexels-photo-6204266.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" }
             ]}
           />
         </div>
@@ -94,10 +89,10 @@ export default function Page() {
             title="What Clients Say"
             description="Hear from those who trust our service."
             testimonials={[
-              { id: "1", name: "Sarah Johnson", role: "CEO, TechCorp", handle: "@sarah_tech", testimonial: "Absolutely wonderful! Exceeded all expectations.", icon: Quote },
-              { id: "2", name: "Michael Chen", role: "CTO, InnovateLab", handle: "@m_chen", testimonial: "A game-changer for our organization.", icon: Quote },
-              { id: "3", name: "Emily Rodriguez", role: "Marketing Director, GrowthCo", handle: "@emily_growth", testimonial: "This is the future of operations management.", icon: Quote },
-              { id: "4", name: "David Kim", role: "Product Manager, StartupXYZ", handle: "@david_pm", testimonial: "Effortless integration and seamless service.", icon: Quote }
+              { id: "1", name: "Sarah Johnson", handle: "@sarah_tech", testimonial: "Absolutely wonderful! Exceeded all expectations.", icon: Quote },
+              { id: "2", name: "Michael Chen", handle: "@m_chen", testimonial: "A game-changer for our organization.", icon: Quote },
+              { id: "3", name: "Emily Rodriguez", handle: "@emily_growth", testimonial: "This is the future of operations management.", icon: Quote },
+              { id: "4", name: "David Kim", handle: "@david_pm", testimonial: "Effortless integration and seamless service.", icon: Quote }
             ]}
           />
         </div>
