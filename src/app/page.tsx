@@ -1,4 +1,4 @@
-use client"
+"use client";
 
 import { ThemeProvider } from "@/providers/ThemeProvider";
 import NavbarStyleApple from '@/components/navbar/NavbarStyleApple/NavbarStyleApple';
@@ -24,18 +24,16 @@ export default function Page() {
       borderRadius="soft"
     >
       <div id="nav" data-section="nav" className="scroll-mt-24">
-        <div className="mx-auto px-4 md:px-6">
-          <NavbarStyleApple
-            navItems={[
-              {name: "Home", id: "home"},
-              {name: "Features", id: "features"},
-              {name: "Pricing", id: "pricing"},
-              {name: "About", id: "about"},
-              {name: "Contact", id: "contact"}
-            ]}
-            brandName="SaaS Dark"
-          />
-        </div>
+        <NavbarStyleApple
+          navItems={[
+            { name: "Home", id: "home" },
+            { name: "Features", id: "features" },
+            { name: "Pricing", id: "pricing" },
+            { name: "About", id: "about" },
+            { name: "Contact", id: "contact" }
+          ]}
+          brandName="SaaS Dark"
+        />
       </div>
       <div id="hero" data-section="hero" className="scroll-mt-24">
         <div className="mx-auto px-4 md:px-6">
@@ -45,8 +43,8 @@ export default function Page() {
             imageSrc={(() => {const _a = assetMap.find(a => a.id === "hero-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()}
             imagePosition="right"
             buttons={[
-              {text: "Get Started", href: "features"},
-              {text: "Learn More", href: "about"}
+              { text: "Get Started", href: "features" },
+              { text: "Learn More", href: "about" }
             ]}
           />
         </div>
@@ -57,8 +55,8 @@ export default function Page() {
             title="About Us"
             description="Discover our mission and the journey behind our innovation."
             bulletPoints={[
-              {title: "Efficiency", description: "Streamline processes like never before.", icon: Zap},
-              {title: "Reliability", description: "Trusted by thousands globally.", icon: ShieldCheck}
+              { title: "Efficiency", description: "Streamline processes like never before.", icon: Zap },
+              { title: "Reliability", description: "Trusted by thousands globally.", icon: ShieldCheck }
             ]}
             imageSrc={(() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()}
             imagePosition="left"
@@ -71,8 +69,8 @@ export default function Page() {
             title="Our Features"
             description="Explore the powerful tools and options available."
             features={[
-              {title: "Advanced Security", description: "State-of-the-art protection for your data.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()},
-              {title: "Seamless Integration", description: "Connect with your favorite tools effortlessly.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})()}
+              { title: "Advanced Security", description: "State-of-the-art protection for your data.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})() },
+              { title: "Seamless Integration", description: "Connect with your favorite tools effortlessly.", imageSrc: (() => {const _a = assetMap.find(a => a.id === "about-bg"); return _a?.url ?? "/public/images/placeholder.webp";})() }
             ]}
           />
         </div>
@@ -83,9 +81,9 @@ export default function Page() {
             title="Choose Your Plan"
             description="Flexible pricing options tailored to meet your needs."
             plans={[
-              {id: "1", price: "$19/mo", name: "Starter", features: ["Basic Support", "100 GB Storage"]},
-              {id: "2", badge: "Popular", price: "$49/mo", name: "Pro", features: ["Priority Support", "500 GB Storage"]},
-              {id: "3", price: "$99/mo", name: "Enterprise", features: ["Dedicated Assistance", "Unlimited Storage"]}
+              { id: "1", price: "$19/mo", name: "Starter", features: ["Basic Support", "100 GB Storage"] },
+              { id: "2", badge: "Popular", price: "$49/mo", name: "Pro", features: ["Priority Support", "500 GB Storage"] },
+              { id: "3", price: "$99/mo", name: "Enterprise", features: ["Dedicated Assistance", "Unlimited Storage"] }
             ]}
           />
         </div>
@@ -96,10 +94,10 @@ export default function Page() {
             title="What Clients Say"
             description="Hear from those who trust our service."
             testimonials={[
-              {id: "1", name: "Sarah Johnson", role: "CEO, TechCorp", handle: "@sarah_tech", testimonial: "Absolutely wonderful! Exceeded all expectations.", icon: Quote},
-              {id: "2", name: "Michael Chen", role: "CTO, InnovateLab", handle: "@m_chen", testimonial: "A game-changer for our organization.", icon: Quote},
-              {id: "3", name: "Emily Rodriguez", role: "Marketing Director, GrowthCo", handle: "@emily_growth", testimonial: "This is the future of operations management.", icon: Quote},
-              {id: "4", name: "David Kim", role: "Product Manager, StartupXYZ", handle: "@david_pm", testimonial: "Effortless integration and seamless service.", icon: Quote}
+              { id: "1", name: "Sarah Johnson", role: "CEO, TechCorp", handle: "@sarah_tech", testimonial: "Absolutely wonderful! Exceeded all expectations.", icon: Quote },
+              { id: "2", name: "Michael Chen", role: "CTO, InnovateLab", handle: "@m_chen", testimonial: "A game-changer for our organization.", icon: Quote },
+              { id: "3", name: "Emily Rodriguez", role: "Marketing Director, GrowthCo", handle: "@emily_growth", testimonial: "This is the future of operations management.", icon: Quote },
+              { id: "4", name: "David Kim", role: "Product Manager, StartupXYZ", handle: "@david_pm", testimonial: "Effortless integration and seamless service.", icon: Quote }
             ]}
           />
         </div>
@@ -118,8 +116,8 @@ export default function Page() {
         <div className="mx-auto px-4 md:px-6">
           <FooterBase
             columns={[
-              {title: "Company", items: [{label: "About", href: "about"}, {label: "Contact", href: "contact"}]},
-              {title: "Product", items: [{label: "Features", href: "features"}, {label: "Pricing", href: "pricing"}]}
+              { title: "Company", items: [{ label: "About", href: "about" }, { label: "Contact", href: "contact" }] },
+              { title: "Product", items: [{ label: "Features", href: "features" }, { label: "Pricing", href: "pricing" }] }
             ]}
             copyrightText="© 2025 SaaS Dark"
           />
